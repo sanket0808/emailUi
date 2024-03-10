@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+   
+    .message-scroller {
+      height: 600px;
+      overflow-y: scroll;
+    }
+    .message-scroll{
+      height: 250px;
+      overflow-y: scroll;
+    }
+    .message-scroll-new{
+      height: 100px;
+      overflow-y: scroll;
+    }
+    .message-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .upper-part, .bottom-part {
+      flex: 1; 
+  }
+  .button-container {
+    margin-top: 10px;
+    display: flex;
+  }
+  .button-container button {
+    margin-right: 10px;
+    flex-grow: 1;
+    width: calc(100% / 3 - 10px); 
+  }
+    
+  
+  </style>
+</head>
+<body>
+
+<div class="container" style="padding-top: 20px;">
+  <div class="row">
+    <div class="col-md-2">
+      <h2>Messages</h2>
+      <div style="display: grid;">
+        <button type="button" class="btn btn-primary">Inbox(20)</button>
+        <button type="button" class="btn ">Sent</button>
+      </div>
+      <div style="display: grid; margin-top:40px">
+        <button type="button" class="btn btn-primary">New Message</button>
+      </div>
+    </div>
+   
+    <div class="col-md-6">
+      <h4>Inbox</h4>
+      <div class="message-scroller">
+        <div class="message-box">
+          <h6>Message 4:</h6> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <div class="message-box">
+          <h6>Message 4:</h6> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <div class="message-box">
+          <h6>Message 4:</h6> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <div class="message-box">
+          <h6>Message 4:</h6> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <div class="message-box">
+          <h6>Message 4:</h6> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <div class="message-box">
+          <h6>Message 4:</h6> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <div class="message-box">
+          <h6>Message 4:</h6> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <div class="message-box">
+          <h6>Message 4:</h6> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <div class="message-box">
+          <h6>Message 4:</h6> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <div class="message-box">
+          <h6>Message 4:</h6> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        
+      </div>
+    </div>    
+    <div class="col-md-4">
+            <h4>Subject Text</h4>
+            <div style="margin-top: 40px;">
+               <p>10/3/2024</p>
+               <label for="from">from:</label>
+               <input type="text">
+            </div>
+            <div>
+              <div class="bottom-part">
+                <label for="to">To:</label>
+                <textarea placeholder="Type your message here..." class="no-scrollbars" style="height:100px;width:100%;border:none; resize:none"></textarea> 
+                </div>
+            </div>
+            <hr>
+          <div>
+          <div class="bottom-part">
+            <textarea placeholder="Type your message here..." class="no-scrollbars" style="height: 250px;width:100%;border:none; resize:none"></textarea> 
+          </div>
+        </div>
+    <div class="button-container">
+      <button type="button" class="btn btn-primary">Reply</button>
+      <button type="button" class="btn btn-secondary">Forward</button>
+      <button type="button" class="btn btn-secondary">Delete</button>
+    </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
